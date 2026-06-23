@@ -134,7 +134,7 @@ Webpage fires network requests
 
 ## 11. Licensing
 - **Our code: MIT.**
-- **DuckDuckGo Tracker Radar: Apache-2.0** — compatible; bundled with attribution. Used for both classification and to generate DNR block rules → keeps the whole shipped artifact MIT/Apache-clean.
+- **Bundled dataset — DuckDuckGo Tracker Data Set (TDS): CC BY-NC-SA 4.0 (NonCommercial)**, © DuckDuckGo, Inc. We compile the published `tds.json` (built from the DuckDuckGo Tracker Radar) into both the classification DB and the DNR block rules. ⚠️ This data is **NonCommercial** — it is **not** Apache-2.0 and **cannot be MIT-relicensed**, so the shipped artifact is "MIT code + CC BY-NC-SA data," not uniformly MIT/permissive. Because the engine is dataset-agnostic behind `buildDb()`, swapping in a permissively-licensed source for a commercial build stays cheap.
 - **EasyList/EasyPrivacy: GPLv3 / CC-BY-SA** — **not bundled** in v1 to avoid copyleft on the codebase. Optional opt-in download later, kept as a separate artifact.
 - `THIRD_PARTY_LICENSES.md` lists all datasets + licenses.
 
