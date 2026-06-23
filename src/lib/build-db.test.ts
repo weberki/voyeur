@@ -31,4 +31,23 @@ describe('buildDb', () => {
     const { rules } = buildDb(raw, 2);
     expect(rules).toHaveLength(2);
   });
+
+  describe('CATEGORY_MAP — real TDS vocabulary', () => {
+    it('maps "Action Pixels" to "advertising"', () => {
+      const { db } = buildDb({ 'pixel.example.com': { categories: ['Action Pixels'] } });
+      expect(db['pixel.example.com'].category).toBe('advertising');
+    });
+    it('maps "Social - Share" to "social"', () => {
+      const { db } = buildDb({ 'share.example.com': { categories: ['Social - Share'] } });
+      expect(db['share.example.com'].category).toBe('social');
+    });
+    it('maps "Tag Manager" to "analytics"', () => {
+      const { db } = buildDb({ 'gtm.example.com': { categories: ['Tag Manager'] } });
+      expect(db['gtm.example.com'].category).toBe('analytics');
+    });
+    it('falls back to "content" for unmapped categories like "Embedded Content"', () => {
+      const { db } = buildDb({ 'cdn.example.com': { categories: ['Embedded Content'] } });
+      expect(db['cdn.example.com'].category).toBe('content');
+    });
+  });
 });

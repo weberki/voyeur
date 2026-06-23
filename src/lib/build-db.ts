@@ -28,6 +28,12 @@ const CATEGORY_MAP: Record<string, TrackerCategory> = {
   social: 'social',
   fingerprinting: 'fingerprinting',
   'third-party analytics marketing': 'analytics',
+  // Real TDS category vocabulary
+  'action pixels': 'advertising',
+  'ad fraud': 'advertising',
+  'social - share': 'social',
+  'social - comment': 'social',
+  'tag manager': 'analytics',
 };
 
 function normalizeCategory(categories: string[] | undefined): TrackerCategory {
