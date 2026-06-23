@@ -15,12 +15,14 @@
     "test:watch": "vitest",
     "typecheck": "wxt prepare && tsc --noEmit -p .wxt/tsconfig.json",
     "build:db": "tsx scripts/build-tracker-db.ts",
+    "test:e2e": "playwright test",
     "postinstall": "wxt prepare"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.61.0",
     "@types/chrome": "^0.2.0",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3",
