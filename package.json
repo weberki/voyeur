@@ -13,6 +13,7 @@
     "zip": "wxt zip",
     "test": "vitest run",
     "test:watch": "vitest",
+    "typecheck": "wxt prepare && tsc --noEmit -p .wxt/tsconfig.json",
     "build:db": "tsx scripts/build-tracker-db.ts",
     "postinstall": "wxt prepare"
   },

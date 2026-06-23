@@ -1,5 +1,7 @@
 // All values are ESTIMATES, documented and surfaced as "estimated" in the UI.
 // Average transfer sizes per blocked resource type (bytes). Conservative round numbers.
+const OTHER_BYTES = 8000;
+
 const AVG_BYTES: Record<string, number> = {
   script: 45000,
   image: 18000,
@@ -9,7 +11,7 @@ const AVG_BYTES: Record<string, number> = {
   font: 30000,
   stylesheet: 20000,
   media: 200000,
-  other: 8000,
+  other: OTHER_BYTES,
 };
 
 // Rough wall-clock cost avoided per blocked request (connection + parse).
@@ -19,7 +21,7 @@ const MS_PER_REQUEST = 35;
 const G_CO2_PER_GB = 26;
 
 export function bytesForType(type: string): number {
-  return AVG_BYTES[type] ?? AVG_BYTES.other;
+  return AVG_BYTES[type] ?? OTHER_BYTES;
 }
 
 export function timeSavedMs(blockedCount: number): number {
