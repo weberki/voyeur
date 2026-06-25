@@ -4,6 +4,8 @@
 
 Sieh, wer dich beobachtet. Voyeur röntgt und blockt Web-Tracker in Echtzeit.
 
+Ein Privacy-first **Tracker-Blocker** mit Echtzeit-X-Ray für Chrome (Manifest V3): sieh auf jeder Seite, wer dich trackt — und blockier es. Keine Telemetrie, vollständig lokal.
+
 **Status:** P0 (Engine) — beobachtet, klassifiziert und blockt Tracker-Requests pro Tab.
 
 > **Privacy-first. Null Telemetrie. Vollständig lokal. Kein Phone-Home.**

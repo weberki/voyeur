@@ -4,6 +4,8 @@
 
 See who is watching you. Voyeur X-rays and blocks web trackers in real time.
 
+A privacy-first **tracker blocker** with a real-time X-ray for Chrome (Manifest V3): see who's tracking you on every site, then block them — no telemetry, fully local.
+
 **Status:** P0 (engine) — observes, classifies, and blocks tracker requests per tab.
 
 > **Privacy-first. Zero telemetry. Fully local. No phone-home.**

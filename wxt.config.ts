@@ -4,7 +4,8 @@ export default defineConfig({
   srcDir: 'src',
   manifest: {
     name: 'Voyeur',
-    description: 'See who is watching you. Voyeur X-rays and blocks web trackers in real time.',
+    description:
+      "Privacy-first tracker blocker & X-ray — see who's watching you and block web trackers in real time. Zero telemetry, local.",
     permissions: ['webRequest', 'declarativeNetRequest', 'webNavigation', 'storage'],
     host_permissions: ['<all_urls>'],
     action: {},
