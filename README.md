@@ -1,5 +1,7 @@
 # Voyeur
 
+**English** · [Deutsch](README.de.md)
+
 See who is watching you. Voyeur X-rays and blocks web trackers in real time.
 
 **Status:** P0 (engine) — observes, classifies, and blocks tracker requests per tab.
